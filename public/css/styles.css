@@ -5,35 +5,39 @@
 }
 body {
   font-family: 'lato', sans-serif;
-  background: #ffffff;
-
   background: linear-gradient(#ffffff, #000000) center no-repeat;
+  height: 100vh;
 }
 h1 {
   font-family: 'staatliches', cursive;
-  font-size: 55px;
+  font-size: 70px;
 }
 a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 35px;
   color: #000000;
   font-weight: bold;
   display: inline-block;
   padding: 5px 10px;
   transition: all ease 0.4s;
-
+  font-family: 'lato', cursive;
   margin: 20px 0;
+}
+a:last-child {
+  border-right: none;
 }
 
 a:hover {
-  background-color: #ffffff;
-  color: #000000;
+  color: rgb(233, 215, 169);
 }
 footer {
   color: #ffffff;
   font-size: 12px;
   text-align: center;
-  margin-top: 280px;
+
+  position: absolute;
+  bottom: 0;
+  right: 45vw;
 }
 
 p {
@@ -53,24 +57,54 @@ form {
   padding: 40px 0;
 }
 form input {
-  padding: 6.5px 0;
-  outline: none;
+  padding: 9px 0;
   border: none;
-  font-size: 18px;
-  border-radius: 2px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 3px;
 }
 form button {
-  padding: 6.5px 4px;
+  padding: 9px 5px;
+  border: none;
   outline: none;
-  border: 0.5px solid #ffffff;
-  font-size: 18px;
-  border-radius: 2px;
+  font-size: 16px;
+  border-radius: 3px;
   background-color: #4caf50;
   color: #ffffff;
+
   transition: all ease 0.4s;
   cursor: pointer;
 }
 
 form button:hover {
   opacity: 0.8;
+}
+
+::placeholder {
+  font-family: 'lato', sans-serif;
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  a {
+    font-size: 25px;
+    display: block;
+    text-align: center;
+  }
+  p {
+    font-size: 12px;
+  }
+  footer {
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+
+    position: absolute;
+    bottom: 0;
+    right: 25vw;
+  }
 }
